@@ -1,0 +1,17 @@
+This a typical library manager web application with features like 
+-Add books
+-Update books
+-Issue and Return books
+-Fine Calculation
+-Reviews and user ratings
+-singin/sinup feature
+-social features like upload a profile pics
+
+The goal of the application was to learn MVC modelling of a web application and get
+ hands on experience of Spring and Hibernate. ßß
+ 
+ Tools Used
+ -Maven
+ -Spring
+ -Hibernate
+ -Tomcat

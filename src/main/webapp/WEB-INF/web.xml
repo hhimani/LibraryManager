@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 
+	2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" > -->
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+	<display-name>Archetype Created Web Application</display-name>
+	<!-- <listener> <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class> 
+		</listener> -->
+	<servlet>
+		<servlet-name>librarymanager</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+            /WEB-INF/librarymanager-servlet.xml
+        </param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>librarymanager</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	 <!-- <servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.jpg</url-pattern>
+	</servlet-mapping> -->
+	<!-- 
+	<context-param>
+    	<param-name>tempfile.dir</param-name>
+    	<param-value>tmpfiles</param-value>
+    </context-param> -->
+
+	<error-page>
+	<error-code>405</error-code>
+    	<location>/error.jsp</location>
+	</error-page>
+	
+<!-- 	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	 -->
+	
+</web-app>

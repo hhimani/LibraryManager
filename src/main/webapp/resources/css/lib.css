@@ -1,0 +1,28 @@
+body{
+background-color:pink;
+}
+a{
+font-family:Calibri;
+}
+h2{
+font-family:Calibri;
+  text-align:center
+}
+h3{
+font-family:Calibri;
+  text-align:center
+}
+p{
+font-family:Calibri;
+}
+  table  tr td th{
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align:center
+    
+  }
+  body{
+  text-align:center;
+  font-family:Calibri;
+  
+  }

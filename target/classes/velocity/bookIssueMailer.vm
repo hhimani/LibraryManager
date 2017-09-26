@@ -1,0 +1,38 @@
+#*<html>
+	<body>
+		<h3>Hi ${bookissuefine.userName}</h3>
+		<p>
+			
+		</p>
+		<h3>
+			You have successfully issued the book Titled
+			:
+			 ${bookissuefine.title}
+		</h3>
+		<br>
+		<table>
+		<th>
+		<tr>Issue Date</tr>
+		<tr>Expected return date</tr>
+		</th>
+		<td>
+		<tr>${bookissuefine.issueDate}</tr>
+		<tr>${bookissuefine.expectedReturnDate}</tr>
+		</td>
+		</table>
+		<h3>
+			Happy reading!!!
+		</h3>
+	</body>
+ 
+</html>
+*#
+
+Hi ${bookissuefine.userName}
+#Still having problems in sending image
+ <img src="data:image/jpeg;base64,${image}" alt="..." width="200" height="200">
+You have successfully issued the book Titled :${bookissuefine.title}
+			 
+		Issue Date    					Expected return date
+		${bookissuefine.issueDate}      	${bookissuefine.expectedReturnDate} 
+			 
